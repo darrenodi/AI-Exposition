@@ -255,6 +255,10 @@ nav .sheader {
   display: flex;
 }
 
+.partner {
+  display: none;
+}
+
 .partner ul {
   padding-bottom: 20px;
   padding-top: 20px;
@@ -265,6 +269,11 @@ nav .sheader {
 
 footer img {
   width: 30%;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
 }
 
 .partner ul li {
@@ -299,7 +308,40 @@ footer img {
   width: 80px;
 }
 
+.more-tab {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.more-tab .fa-angle-down {
+  color: #ef513c;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footer-show {
+  display: none;
+}
+
+.footer-hide {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
+  .footer-hide {
+    display: none;
+  }
+
+  .footer-show {
+    display: block;
+  }
+  .more-tab {
+    display: none;
+  }
+
   .hide-home {
     display: none;
   }
@@ -320,6 +362,10 @@ footer img {
 
   nav .sheader.showMenu {
     display: none;
+  }
+
+  .partner {
+    display: block;
   }
 
   footer img {
@@ -446,5 +492,7 @@ footer img {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    color: black;
+    background-color: white;
   }
 }

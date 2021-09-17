@@ -15,11 +15,3 @@ function toggleMenu() {
   }
 }
 ham.addEventListener('click', toggleMenu);
-
-// const menuLinks = document.querySelectorAll('.menuLink');
-
-// menuLinks.forEach(
-//   (menuLink) => {
-//     menuLink.addEventListener('click', toggleMenu);
-//   },
-// );
