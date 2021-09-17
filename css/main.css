@@ -322,10 +322,6 @@ footer img {
     display: none;
   }
 
-  footer {
-    display: flex;
-  }
-
   footer img {
     width: 10%;
   }
