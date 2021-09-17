@@ -20,6 +20,8 @@ body {
 .ham {
   /* keep the hamburger button above everything */
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
 }
 
 .ham .icon {
@@ -108,6 +110,7 @@ nav .sheader {
 
 .hello-sharing {
   color: #e02424;
+  font-size: 20px;
 }
 
 .about-intro {
@@ -164,7 +167,6 @@ nav .sheader {
   height: auto;
   text-align: justify;
   word-break: keep-all;
-  width: 80%;
 }
 
 .expo-location {
@@ -199,12 +201,12 @@ nav .sheader {
   color: #fff;
 }
 
-.program-features h1 {
+.program-features h2 {
   font-size: 24px;
   text-align: center;
 }
 
-.program-features h1::after {
+.program-features h2::after {
   content: "";
   border: 1px solid #ef513c;
   display: block;
@@ -298,6 +300,10 @@ footer img {
 }
 
 @media screen and (min-width: 768px) {
+  .hide-home {
+    display: none;
+  }
+
   .program-features .mob-btn {
     text-decoration: underline;
     font-size: 18px;
@@ -314,6 +320,10 @@ footer img {
 
   nav .sheader.showMenu {
     display: none;
+  }
+
+  footer {
+    display: flex;
   }
 
   footer img {
@@ -439,5 +449,6 @@ footer img {
     margin: auto;
     align-items: center;
     justify-content: center;
+    gap: 20px;
   }
 }

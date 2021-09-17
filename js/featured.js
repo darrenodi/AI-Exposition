@@ -67,7 +67,7 @@ function myFunction(item) {
   speakerPic.alt = item.image.alt;
   const speakerAtt = document.createElement('div');
   speakerAtt.className = 'speakerAtt';
-  const speakerName = document.createElement('h1');
+  const speakerName = document.createElement('h2');
   speakerName.textContent = item.name;
   const speakerPos = document.createElement('h5');
   speakerPos.textContent = item.profession;
