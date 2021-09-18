@@ -1,0 +1,48 @@
+.speakers-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.speakerBox {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  background-image: url(/images/mobileDesign.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.speakerPic {
+  width: 120px;
+  height: 120px;
+  margin-left: 13px;
+  margin-top: 13px;
+  object-fit: cover;
+}
+
+.speakerAtt h2 {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.speakerAtt h5 {
+  color: #ef513c;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+.speakerAtt p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .speakers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
